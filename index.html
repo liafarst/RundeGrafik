@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Website Name</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+	</head>
+	<body>
+
+		<div class="wrapper mx-auto">
+		   <canvas id="canvas" width="1000" height="600"></canvas>
+		   <div class="filter">
+				 <label for="period" class="no-select">Zeitraum:</label>
+					<select class="form-control" id="period">
+						<option value="1">letzte Stunde</option>
+						<option value="6">6 St.</option>
+						<option value="12">12 St.</option>
+						<option value="24" selected>24 St.</option>
+						<option value="48">48 St.</option>
+						<option value="168">7 Tage</option>
+					</select>
+					<br>
+					<!-- <label for="division">Verteilungen:</label>
+					<select class="form-control" id="division">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8" selected>8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					<br> -->
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" name="action" id="active" value="active" checked>
+					  <label class="form-check-label no-select" for="active">
+					    Active
+					  </label><br>
+					  <input class="form-check-input" type="checkbox" name="action" id="inactive" value="inactive" checked>
+					  <label class="form-check-label no-select" for="inactive">
+					    Inactive
+					  </label>
+					</div>
+					<br>
+					<label class="no-select">Components:</label>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="component" id="Rotor" value="Rotor" checked>
+						<label class="form-check-label" for="Rotor">
+							Rotor
+						</label><br>
+						<input class="form-check-input" type="checkbox" name="component" id="Transmission" value="Transmission" checked>
+						<label class="form-check-label no-select" for="Transmission">
+							Transmission
+						</label><br>
+						<input class="form-check-input" type="checkbox" name="component" id="Generator" value="Generator" checked>
+						<label class="form-check-label no-select" for="Generator">
+							Generator
+						</label><br>
+						<input class="form-check-input" type="checkbox" name="component" id="Converter + Transformer" value="Converter + Transformer" checked>
+						<label class="form-check-label no-select" for="Converter + Transformer">
+							Converter + Transformer
+						</label><br>
+						<input class="form-check-input" type="checkbox" name="component" id="Tower" value="Tower" checked>
+						<label class="form-check-label no-select" for="Tower">
+							Tower
+						</label><br>
+						<input class="form-check-input" type="checkbox" name="component" id="Nancelle" value="Nancelle" checked>
+						<label class="form-check-label no-select" for="Nancelle">
+							Nancelle
+						</label><br>
+						<input class="form-check-input" type="checkbox" name="component" id="Control System" value="Control System" checked>
+						<label class="form-check-label no-select" for="Control System">
+							Control System
+						</label><br>
+					</div>
+		   </div>
+		</div>
+		<script src="graphcontrol.js"></script>
+		<script src="slidercontrol.js"></script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+	background-color:#fff;
+  background-repeat:no-repeat;
+	overflow-y: hidden;
+}
+
+html,body {
+	width: 100%;
+	min-width:1280px;
+	min-height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+.wrapper {
+	overflow:hidden;
+	width: 1000px;
+	height: 600px;
+	position: relative;
+}
+
+.filter {
+	position: absolute;
+	top:100px;
+	right:150px;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/*.filter select {
+	width:200px;
+}*/
+
+.canvas {
+	width:750px;
+	height:600px;
+	display: inline-block;
+}
