@@ -52,4 +52,74 @@
 		draw();
 	});
 
+	document.getElementById('Rotor').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp0 = 1;
+		} else {
+			comp0 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
+	document.getElementById('Transmission').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp1 = 1;
+		} else {
+			comp1 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
+	document.getElementById('Generator').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp2 = 1;
+		} else {
+			comp2 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
+	document.getElementById('Converter + Transformer').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp3 = 1;
+		} else {
+			comp3 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
+	document.getElementById('Tower').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp4 = 1;
+		} else {
+			comp4 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
+	document.getElementById('Nancelle').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp5 = 1;
+		} else {
+			comp5 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
+	document.getElementById('Control System').addEventListener('change', function (event) {
+		if(event.target.checked){
+			comp6 = 1;
+		} else {
+			comp6 = 0;
+		}
+		clearCtx();
+		draw();
+	});
+
 })();
